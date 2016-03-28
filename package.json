@@ -1,0 +1,24 @@
+{
+  "name": "loopback-authored-mixin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nxtlvlgg/loopback-authored-mixin.git"
+  },
+  "author": "Josh Elias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nxtlvlgg/loopback-authored-mixin/issues"
+  },
+  "homepage": "https://github.com/nxtlvlgg/loopback-authored-mixin#readme",
+  "mixinName": "Authored",
+  "dependencies": {
+    "async": "^2.0.0-rc.2",
+    "loopback": "^2.27.0"
+  }
+}
