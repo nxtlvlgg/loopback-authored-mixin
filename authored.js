@@ -21,10 +21,12 @@ module.exports = function(Model, mixinOptions) {
 
         // Add relation to slug model
         User.hasMany(Model, {as: plural, foreignKey: foreignKeyName});
+        User.relations[plural].model = Model.definition.name;
 
         // Add properties and relations to slug model
         Model.defineProperty(foreignKeyName, { type: ObjectId });
         Model.belongsTo(User, {as: authorName, foreignKey: foreignKeyName});
+        Model.relations[authorName].model = User.definition.name;
     });
 
 
